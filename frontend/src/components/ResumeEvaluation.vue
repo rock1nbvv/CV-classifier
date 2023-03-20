@@ -9,27 +9,27 @@
             <div class="col-9">
               <div class="mb-3">
                 <label for="nameInput" class="form-label"
-                >Your name: {{ name }}</label
+                  >Your name: {{ name }}</label
                 >
                 <input
-                    type="text"
-                    class="form-control"
-                    id="nameInput"
-                    v-model="name"
-                    placeholder="Your name"
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  v-model="name"
+                  placeholder="Your name"
                 />
               </div>
               <div class="mb-3">
                 <label class="form-label">Quality management</label>
                 <select
-                    class="form-select"
-                    id="brand"
-                    v-model="form.quality_management"
+                  class="form-select"
+                  id="brand"
+                  v-model="form.quality_management"
                 >
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -38,14 +38,14 @@
               <div class="mb-3">
                 <label class="form-label">Scope management</label>
                 <select
-                    class="form-select"
-                    id="brand"
-                    v-model="form.scope_management"
+                  class="form-select"
+                  id="brand"
+                  v-model="form.scope_management"
                 >
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -54,14 +54,14 @@
               <div class="mb-3">
                 <label class="form-label">Risk management</label>
                 <select
-                    class="form-select"
-                    id="brand"
-                    v-model="form.risk_management"
+                  class="form-select"
+                  id="brand"
+                  v-model="form.risk_management"
                 >
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -70,14 +70,14 @@
               <div class="mb-3">
                 <label class="form-label">Test documentation</label>
                 <select
-                    class="form-select"
-                    id="brand"
-                    v-model="form.documentation"
+                  class="form-select"
+                  id="brand"
+                  v-model="form.documentation"
                 >
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -86,14 +86,14 @@
               <div class="mb-3">
                 <label class="form-label">Automation testing</label>
                 <select
-                    class="form-select"
-                    id="brand"
-                    v-model="form.automation"
+                  class="form-select"
+                  id="brand"
+                  v-model="form.automation"
                 >
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -103,9 +103,9 @@
                 <label class="form-label">English language</label>
                 <select class="form-select" id="brand" v-model="form.english">
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -115,9 +115,9 @@
                 <label class="form-label">Knowledge of STLC</label>
                 <select class="form-select" id="brand" v-model="form.stlc">
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -127,9 +127,9 @@
                 <label class="form-label">Knowledge of SDLC</label>
                 <select class="form-select" id="brand" v-model="form.sdlc">
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -139,9 +139,9 @@
                 <label class="form-label">Knowledge of git</label>
                 <select class="form-select" id="brand" v-model="form.git">
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -151,9 +151,9 @@
                 <label class="form-label">Knowledge of Docker</label>
                 <select class="form-select" id="brand" v-model="form.docker">
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -162,14 +162,14 @@
               <div class="mb-3">
                 <label class="form-label">Unit testing</label>
                 <select
-                    class="form-select"
-                    id="brand"
-                    v-model="form.unit_testing"
+                  class="form-select"
+                  id="brand"
+                  v-model="form.unit_testing"
                 >
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -179,9 +179,9 @@
                 <label class="form-label">Knowledge of Java</label>
                 <select class="form-select" id="brand" v-model="form.java">
                   <option
-                      v-for="(value, index) in options"
-                      v-bind:value="value"
-                      v-bind:key="index"
+                    v-for="(value, index) in options"
+                    v-bind:value="value"
+                    v-bind:key="index"
                   >
                     {{ value }}
                   </option>
@@ -267,9 +267,9 @@ export default {
       };
       console.log(JSON.stringify(candidate));
       const response = await this.sendRequest(
-          "http://127.0.0.1:5000/api/evaluate",
-          "post",
-          JSON.stringify(candidate)
+        "http://127.0.0.1:5000/api/evaluate",
+        "post",
+        JSON.stringify(candidate)
       );
       const temp = await response.json();
       this.predictedRank = temp.rank;

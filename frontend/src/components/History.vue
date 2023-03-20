@@ -1,8 +1,8 @@
 <template>
   <div v-for="(car, index) in carHistory" :key="index">
     <div
-        class="card"
-        style="
+      class="card"
+      style="
         width: 18rem;
         float: left;
         position: relative;
@@ -54,8 +54,8 @@ export default {
     },
     async getCarHistory() {
       const response = await this.sendRequest(
-          "http://127.0.0.1:5000/api/getCarHistory",
-          "get"
+        "http://127.0.0.1:5000/api/getCarHistory",
+        "get"
       );
       this.cars = await response.json();
     },

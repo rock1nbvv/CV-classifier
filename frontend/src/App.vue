@@ -9,8 +9,8 @@ export default {
 </script>
 
 <template>
-  <MyHeader/>
-  <router-view/>
+  <MyHeader />
+  <router-view />
 </template>
 
 <style>
