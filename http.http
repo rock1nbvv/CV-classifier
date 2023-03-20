@@ -1,0 +1,35 @@
+GET http://127.0.0.1:5000/
+
+###
+GET http://127.0.0.1:5000/api/getAllRanks
+
+###
+POST http://127.0.0.1:5000/api/evaluate
+Content-Type: application/json
+
+{
+  "name": "vlad",
+  "form": {
+    "Quality management": "Somewhat high",
+    "Scope management": "Very high",
+    "Risk management": "Very high",
+    "Test documentation": "Very low",
+    "Automation testing": "Moderately high",
+    "English": "Very high",
+    "STLC": "Moderately low",
+    "SDLC": "Somewhat high",
+    "git": "More or less low",
+    "Docker": "Somewhat high",
+    "unit-testing": "High",
+    "Java core": "Extremely low"
+  }
+}
+
+###
+POST http://127.0.0.1:5000/api/interview/2
+Content-Type: application/json
+
+{
+  "type": "hr",
+  "grade": "Somewhat high"
+}
