@@ -1,4 +1,4 @@
-# Fuzzy Movie Estimator (based on CWW)
+# Fuzzy CV classifier
 
 ### To run the app, follow these instructions:
 
