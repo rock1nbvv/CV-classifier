@@ -54,7 +54,7 @@ export default {
     },
     async getCarHistory() {
       const response = await this.sendRequest(
-        "http://127.0.0.1:5000/api/getCarHistory",
+        "http://127.0.0.1:5000/api/getAllRanks",
         "get"
       );
       this.cars = await response.json();
