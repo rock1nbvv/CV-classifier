@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import CandidateEvaluation from "../components/ResumeEvaluation.vue";
-import CandidatesHistory from "@/components/History.vue";
+import CandidatesHistory from "@/components/CandidateHistory.vue";
 
 const routes = [
   {

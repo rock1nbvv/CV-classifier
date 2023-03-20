@@ -1,5 +1,5 @@
 <template>
-  <div v-for="(car, index) in carHistory" :key="index">
+  <div v-for="(candidate, index) in candidateHistory" :key="index">
     <div
       class="card"
       style="
@@ -11,11 +11,11 @@
       "
     >
       <div class="card-body">
-        <h5 class="card-title">{{ car.brand }} {{ car.name }}</h5>
-        <p class="card-text">Age: {{ car.age }}</p>
-        <p>Mileage: {{ car.mileage }}</p>
-        <p>Repairments: {{ car.repairments }}</p>
-        <p>Evaluated Price: {{ car.est_price }}</p>
+        <h5 class="card-title">{{ candidate.brand }} {{ candidate.name }}</h5>
+        <p class="card-text">Age: {{ candidate.age }}</p>
+        <p>Mileage: {{ candidate.mileage }}</p>
+        <p>Repairments: {{ candidate.repairments }}</p>
+        <p>Evaluated Price: {{ candidate.est_price }}</p>
         <!--        <a href="#" class="btn btn-primary">Go somewhere</a>-->
       </div>
     </div>
@@ -25,17 +25,15 @@
 
 <script>
 export default {
-  name: "CarHistory",
   data() {
     return {
-      msg: "Hello, this is History",
-      carHistory: [],
+      candidateHistory: [],
     };
   },
   async created() {
-    await this.getCarHistory();
+    await this.getHistory();
 
-    this.carHistory = Array.from(this.cars);
+    this.candidateHistory = Array.from(this.candidates);
   },
   methods: {
     async sendRequest(url, method, data) {
@@ -52,12 +50,12 @@ export default {
 
       return response;
     },
-    async getCarHistory() {
+    async getHistory() {
       const response = await this.sendRequest(
         "http://127.0.0.1:5000/api/getAllRanks",
         "get"
       );
-      this.cars = await response.json();
+      this.candidates = await response.json();
     },
   },
 };

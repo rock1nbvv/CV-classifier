@@ -189,8 +189,8 @@
               </div>
               <div class="mb-3" v-if="predictedRank !== null">
                 <p>
-                  Your predicted rating: {{ predictedRank }}, your rank
-                  {{ est_class }}
+                  Your predicted class - {{ est_class }}, your rank -
+                  {{ predictedRank }}
                 </p>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default {
       );
       const temp = await response.json();
       this.predictedRank = temp.rank;
-      this.predictedRank = temp.estimated_class;
+      this.est_class = temp.estimated_class;
     },
   },
 };
