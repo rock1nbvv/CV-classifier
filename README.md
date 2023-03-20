@@ -15,14 +15,12 @@
    `db.create_all()`\
    Make sure db.sqlite is created in the backend folder
 
-3. Run static/parse_movies.py to populate DB
-
-4. Run backend:
+3. Run backend:
    `flask run`
 
-5. Install npm packages in the frontend folder:
+4. Install npm packages in the frontend folder:
    `npm install`
 
-6. Run frontend:
+5. Run frontend:
    `npm run serve`
    

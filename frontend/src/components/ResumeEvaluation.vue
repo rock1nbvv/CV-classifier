@@ -21,11 +21,7 @@
               </div>
               <div class="mb-3">
                 <label class="form-label">Quality management</label>
-                <select
-                  class="form-select"
-                  id="brand"
-                  v-model="form.quality_management"
-                >
+                <select class="form-select" v-model="form.quality_management">
                   <option
                     v-for="(value, index) in options"
                     v-bind:value="value"
@@ -37,11 +33,7 @@
               </div>
               <div class="mb-3">
                 <label class="form-label">Scope management</label>
-                <select
-                  class="form-select"
-                  id="brand"
-                  v-model="form.scope_management"
-                >
+                <select class="form-select" v-model="form.scope_management">
                   <option
                     v-for="(value, index) in options"
                     v-bind:value="value"
@@ -53,11 +45,7 @@
               </div>
               <div class="mb-3">
                 <label class="form-label">Risk management</label>
-                <select
-                  class="form-select"
-                  id="brand"
-                  v-model="form.risk_management"
-                >
+                <select class="form-select" v-model="form.risk_management">
                   <option
                     v-for="(value, index) in options"
                     v-bind:value="value"
@@ -69,11 +57,7 @@
               </div>
               <div class="mb-3">
                 <label class="form-label">Test documentation</label>
-                <select
-                  class="form-select"
-                  id="brand"
-                  v-model="form.documentation"
-                >
+                <select class="form-select" v-model="form.documentation">
                   <option
                     v-for="(value, index) in options"
                     v-bind:value="value"
@@ -85,11 +69,7 @@
               </div>
               <div class="mb-3">
                 <label class="form-label">Automation testing</label>
-                <select
-                  class="form-select"
-                  id="brand"
-                  v-model="form.automation"
-                >
+                <select class="form-select" v-model="form.automation">
                   <option
                     v-for="(value, index) in options"
                     v-bind:value="value"
@@ -161,11 +141,7 @@
               </div>
               <div class="mb-3">
                 <label class="form-label">Unit testing</label>
-                <select
-                  class="form-select"
-                  id="brand"
-                  v-model="form.unit_testing"
-                >
+                <select class="form-select" v-model="form.unit_testing">
                   <option
                     v-for="(value, index) in options"
                     v-bind:value="value"

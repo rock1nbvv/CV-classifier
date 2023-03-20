@@ -75,11 +75,17 @@ def rank_interview(id):
     row = [get_grade(user_input["grade"])[1], candidate.rank]
     candidate.rank = sum(row)
     if user_input["type"] == "hr":
-        if not candidate.hr_interviewed:
+        if candidate.hr_interviewed == False:
             candidate.hr_interviewed = True
             db.session.commit()
+            return jsonify(str(sum(row)))
         return jsonify("HR interview has already been conducted")
-    return jsonify(str(sum(row)))
+    else:
+        if candidate.tech_interviewed == False:
+            candidate.tech_interviewed = True
+            db.session.commit()
+            return jsonify(str(sum(row)))
+        return jsonify("Tech interview has already been conducted")
 
 
 if __name__ == '__main__':
